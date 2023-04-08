@@ -1,0 +1,72 @@
+@import '_constants'
+@import '_mixins'
+
+body
+    font-family: $primary-font
+
+h1, h2, h3, h4, h5, h6, button
+    text-transform: uppercase
+
+.base-btn
+    font-size: var(--fs16)
+    color: #fff
+    height: 40px
+    width: 150px
+    background-color: $orange
+    &:hover
+        background-color: darken($orange, 5)
+    &:active
+        background-color: lighten($orange, 5)
+
+.blue
+    background-color: #0052C1
+.dark-blue
+    background-color: $dark-blue
+.green
+    background-color: #C4E769
+.pink
+    background-color: #FFE2DE
+.sky
+    background-color: $blue
+.sky-txt
+    color: $blue
+.light-purple
+    background-color: #DEE1FF
+.purple
+    background-color: #8F00FF
+.fon
+    background-image: url(../images/4.png)
+    background-size: cover
+    background-position: center
+.card
+    padding: 70px
+    color: #fff
+    width: 100%
+    font-size: 36px
+    &-content
+        padding-top: 20px
+        width: 100%
+        border-top: 1px solid #fff
+        position: relative
+        padding-left: 30px
+        &::before
+            content: ''
+            border-radius: 50%
+            height: 15px
+            width: 15px
+            position: absolute
+            left: 0
+            top: 37px
+            background-color: $orange 
+
+@import 'sections/_intro'
+@import 'sections/_promo'
+@import 'sections/_about'
+@import 'sections/_help'
+@import 'sections/_cards'
+@import 'sections/_plan'
+@import 'sections/_promo2'
+@import 'sections/_contact_intro'
+@import 'sections/_contact'
+@import 'sections/_footer'
+@import '_media.sass'   

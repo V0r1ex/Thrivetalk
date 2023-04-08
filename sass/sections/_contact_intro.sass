@@ -1,0 +1,35 @@
+@import '../_mixins.sass'
+@import '../_constants.sass'
+    
+.section-contact-intro
+    background-color: $dark-blue
+    .section-inner
+        @include flex_center()
+        color: #fff
+        justify-content: start
+        align-items: stretch
+        .contact-intro-img
+            object-fit: cover
+            width: 30%
+        .contact-intro-body
+            margin: 0 auto
+            padding: 40px 0
+            width: 50%
+            &-h6
+                font-size: var(--fs16)
+                font-weight: 200
+            &-content
+                margin-top: 230px
+                .contact-intro-content-h1
+                    font-size: var(--fs64)
+                .contact-intro-content-p
+                    max-width: 70%
+                    margin-top: 45px
+                    font-size: var(--fs36)
+        .contact-intro-btn
+            margin-top: 50px
+            background-color: $blue
+            &:hover
+                background-color: darken($blue, 5)
+            &:active
+                background-color: lighten($blue, 5)

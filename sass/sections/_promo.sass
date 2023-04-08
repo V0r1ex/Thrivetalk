@@ -1,0 +1,26 @@
+@import '../_mixins.sass'
+@import '../_constants.sass'
+
+.section-promo
+    background-color: $blue
+    .section-inner
+        color: #fff
+        @include flex_center(60px)
+        justify-content: space-between
+        align-items: stretch
+        .promo-img
+            object-fit: cover
+            width: 30%
+        .promo-body
+            width: 30%
+            margin: 0 auto
+            align-self: center
+            padding: 40px 0 40px 40px
+            &-h3
+                font-size: var(--fs36)
+            &-content
+                .bold
+                    font-weight: bold
+                margin-top: 60px
+                font-size: var(--fs20)
+

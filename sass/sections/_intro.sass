@@ -1,0 +1,80 @@
+@import '../_mixins.sass'
+@import '../_constants.sass'
+
+.section-intro
+    padding: 40px 20px
+    position: relative
+    background-color: $yellow-light
+    overflow: hidden
+    .section-inner
+        width: 60%
+        margin: 0 auto
+        position: relative
+        h4
+            font-size: var(--fs24)
+            color: $blue
+        .header
+            width: 100%
+            @include flex_center(50px)
+            justify-content: space-around
+            z-index: 1
+            flex-wrap: wrap
+            position: relative
+            .navbar
+                align-self: center
+                font-size: 14px
+                @include flex_center(20px)        
+                &-item 
+                    &-link
+                        color: $dark-blue
+                        &:hover
+                            text-decoration: underline
+            .header-btn
+                border-radius: 25px
+                height: 40px
+                width: 150px
+                background-color: $blue
+                color: #fff
+                &:hover
+                    background-color: darken($blue, 5)
+                &:active
+                    background-color: lighten($blue, 5)
+        .intro-img-container
+            position: absolute
+            right: 500px
+            top: 600px
+            z-index: 0
+            div
+                width: 1100px
+                height: 600px
+                border-radius: 300px
+                position: absolute
+            .intro-rect
+                background-color: #fff
+                rotate: -60deg
+                bottom: 100px
+                left: -130px
+            .intro-img
+                rotate: -30deg
+                bottom: 0
+                background-size: cover
+                background-position: center
+                background-image: url(../images/6.png)
+        .intro-body
+            z-index: 1
+            position: relative
+            margin-top: 300px
+            max-width: 500px
+            &-h1
+                color: $dark-blue
+                font-size: var(--fs48)
+                margin-top: 10px
+            &-txt
+                margin-top: 50px
+                font-size: var(--fs24)
+                color: $dark-blue
+            .intro-btns-container
+                margin-top: 40px
+                button
+                    margin: 20px
+

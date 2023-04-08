@@ -1,0 +1,19 @@
+@import '../_mixins.sass'
+@import '../_constants.sass'
+
+.section-plan
+    padding: 80px
+    .section-inner
+        @include flex_center()
+        flex-wrap: wrap 
+        .plan-item
+            min-width: 160px
+            width: 20%
+            margin: 40px 160px
+            .plan-item-h3
+                font-size: var(--fs28)
+                color: $dark-blue
+            .plan-item-content
+                margin-top: 30px
+                color: $pale-blue
+                font-size: var(--fs16)
